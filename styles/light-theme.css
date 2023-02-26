@@ -1,0 +1,90 @@
+/* General styles */
+:root{
+    --light-theme-bcgc: #EAE7DC;
+    --primary-text-color: #162129;
+    --primary-nav-ref-color: #8E8D8A;
+    --hover-nav-ref-color: #E85A4F;
+    --additional-color: #379683;
+    --color-accent: #D8C3A5;
+    --light-violet: #AAA7DC;
+    --simple-black: #000000;
+}
+
+body{
+    color: var(--primary-text-color);
+    background-color: var(--light-theme-bcgc);
+}
+
+/* Header */
+
+.header{
+    background-color:var(--light-theme-bcgc);
+}
+.header-link{
+    color: var(--primary-nav-ref-color);
+    transition: 500ms;
+    border-bottom: 5px solid transparent;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.current{
+    color:var(--hover-nav-ref-color);
+    border-bottom: 5.5px solid var(--hover-nav-ref-color);
+    padding-bottom: 2.5px;
+}
+.noncurrent:hover,
+.noncurrent:focus{
+    color:var(--hover-nav-ref-color);
+}
+.noncurrent::after{
+    position: absolute;
+    bottom: -5px;
+    content: '';
+    width: 0;
+    height: 5px;
+    background: var(--hover-nav-ref-color);
+    transition: width 0.4s ease-out;
+    right: 0;
+    left: initial;
+}
+.btn-change-theme{
+    color: var(--primary-nav-ref-color);
+}
+
+/* Scroll bar */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--simple-black); 
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {   
+    background: #202020; 
+}
+
+/* Contacts */
+
+.contacts-ref.github-ref:hover,
+.contacts-ref.github-ref:focus{
+    color: var(--light-violet);
+}
+.contacts-ref.email-ref:hover,
+.contacts-ref.email-ref:focus{
+    color: var(--additional-color);
+}
+
+/* Response */
+
+@media (max-width: 426px) {
+    .btn-hamburger{
+        background-color: inherit;
+    }
+    .hamburger-row{
+        background-color: var(--hover-nav-ref-color);
+    }
+}

@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name=description content="| Vitaliy Kostiuk  Portfolio | Kostuk | Vitaliy | Portfolio  |  Web-Developer  |  Front-End Developer  |  Landing and multi-landing sites  |  Freelance  |  19.11.22">
+    <meta name=keywords content="Vitaliy, Vitalii, Vitalij, Kostiuk, web developer, webdev, freelancer, landing site, Freelance">
+    <meta name="google-site-verification" content="B4hQlIyU2ILtHKQzSrgMTJkiXOYWJpUFi0DZ7fgIzK8" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/light-theme.css" id="theme-link">
+    <link rel="icon" type="image/x-icon" href="./images/my-photo.jpg">
+    <script src="https://kit.fontawesome.com/44ddc9fabc.js" crossorigin="anonymous"></script>
+    <title>Portfolio Vitaliy Kostiuk</title>
 </head>
-<body>
-    
+<body id="about">
+    <div class="modal">
+        <div class="modal-content">
+            <img src="./images/my-photo.jpg" alt="Vitaliy Kostiuk" class="my-photo-modal">
+        </div>
+    </div>
+    <div class="btn-hamburger">
+        <span class="hamburger-row first-row"></span>
+        <span class="hamburger-row"></span>
+        <span class="hamburger-row"></span>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <ul class="header-list">
+                    <li class="header-list-el">
+                        <img src="./images/my-photo.jpg" alt="vitaliy kostiuk" class="image my-photo-header">
+                        <a href="#about" class="header-link current">
+                            <p class="header-para">About</p>
+                        </a>
+                    </li>
+                    <li class="header-list-el">
+                        <a href="#skills" class="header-link noncurrent">
+                            <i class="fa-sharp fa-solid fa-bolt"></i>
+                            <p class="header-para">Skills</p>
+                        </a>
+                    </li>
+                    <li class="header-list-el">
+                        <a href="#projects" class="header-link noncurrent">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p class="header-para">Projects</p>
+                        </a>
+                    </li>
+                    <li class="header-list-el">
+                        <a href="#contacts" class="header-link noncurrent">
+                            <i class="fa-solid fa-message"></i>
+                            <p class="header-para">Contacts</p>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn-change-theme">
+                    <i class="fa-solid fa-moon" id="moon"></i>
+                    <i class="fa-solid" id="sun"s></i>
+                    Theme
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="hero main-section">
+                <h1 id="h1" class="visually-hidden">Vitaliy Kostiuk</h1>
+                <div class="hero-wrapper">
+                    <p class="hero-para _anim-items">
+                        Hello! My name is Vitaliy Kostiuk and I`m a JS Front-End Developer from Lviv, Ukraine
+                            <img src="./images/ua-flag.jpg" alt="flag Ukraine" class="image image-ua-flag">
+                        </div>
+                    </p>
+            </section>
+            <section id="skills" class="skills main-section">
+                <h2 class="main-title _anim-items">My skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-list-el">
+                        <p class="skills-para _anim-items">
+                            HTML
+                        </p>
+                        <i class="fa-brands fa-html5 _anim-items icon"></i>
+                    </li>
+                    <li class="skills-list-el">
+                        <p class="skills-para _anim-items">
+                            CSS
+                        </p>
+                        <i class="fa-brands fa-css3-alt _anim-items icon"></i>
+                    </li>
+                    <li class="skills-list-el">
+                        <p class="skills-para _anim-items">
+                            Java Script
+                        </p>
+                        <i class="fa-brands fa-js _anim-items icon"></i>
+                    </li>
+                    <li class="skills-list-el">
+                        <p class="skills-para _anim-items">
+                            Git
+                        </p>
+                        <i class="fa-brands fa-git-alt _anim-items icon"></i>
+                    </li>
+                    <li class="skills-list-el">
+                        <p class="skills-para _anim-items">
+                            GitHub
+                        </p>
+                        <i class="fa-brands fa-github _anim-items icon"></i>
+                    </li>
+                </ul>                   
+            </section>
+            <section id="projects" class="projects main-section">
+                <h2 class="main-title _anim-items">Projects</h2>
+                <ul class="projects-list _anim-items">
+                    <li class="projects-list-el">
+                        <h3 class="projects-list-el-title">Resume Anton Chornyi</h3>
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://goit-homework-resume.netlify.app" class="projects-list-el-ref">
+                            <img src="./images/goit-homework-resume.jpg" alt="resume anton chornyi" class="projects-screen">
+                        </a>
+                        <p class="projects-el-list-para">Homework on frontend courses. I use only HTML & CSS</p>
+                    </li>
+                    <li class="projects-list-el">
+                        <h3 class="projects-list-el-title">Quiz</h3>
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://wayup-hw4-js-quiz.netlify.app" class="projects-list-el-ref">
+                            <img src="./images/quiz-projects.jpg" alt="quiz" class="projects-screen">
+                        </a>
+                        <p class="projects-el-list-para">This is a simple quiz using JS</p>
+                    </li>
+                    <li class="projects-list-el">
+                        <h3 class="projects-list-el-title">Slider</h3>
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://wayup-hw3-js-slider-and-tabs.netlify.app/slider.html" class="projects-list-el-ref">
+                            <img src="./images/slider-screen.jpg" alt="slider" class="projects-screen">
+                        </a>
+                        <p class="projects-el-list-para">Simple slider using JS</p>
+                    </li>
+                    <li class="projects-list-el">
+                        <h3 class="projects-list-el-title">To Do List</h3>
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://to-d-o-li-st.netlify.app/" class="projects-list-el-ref">
+                            <img src="./images/to-do-list.jpg" alt="to do list" class="projects-screen">
+                        </a>
+                        <p class="projects-el-list-para">This website allows you to add tasks that you need to complete and mark completed ones. Local storage is used to store the tasks after updating the website.</p>
+                    </li>
+                    <li class="projects-list-el">
+                        <h3 class="projects-list-el-title">Sending Messages To TG</h3>
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://send-message-to-tg.netlify.app" class="projects-list-el-ref">
+                            <img src="./images/send-message-to-tg.jpg" alt="sending messages to telegram" class="projects-screen">
+                        </a>
+                        <p class="projects-el-list-para">This project was executed to showcase my skills and abilities. The Axios library, Telegram API, and Bootstrap were used.</p>
+                    </li>
+                </ul>                
+            </section>
+            <section id="contacts" class="contacts main-section">
+                <h2 class="main-title _anim-items">Get in touch</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-list-el _anim-items">
+                        <a href="tel:+380979029962" class="contacts-ref tel-ref">
+                            <i class="fa-solid fa-phone"></i>
+                            +380 97 902 99 62</a>
+                    </li>
+                    <li class="contacts-list-el _anim-items">
+                        <a href="mailto:kostukvitalik98@gmail.com" class="contacts-ref email-ref">
+                            <i class="fa-solid fa-envelope"></i>
+                            kostukvitalik98@gmail.com</a>
+                    </li>
+                    <li class="contacts-list-el _anim-items">
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://t.me/vitalik_kostiuk" class="contacts-ref tg-ref">
+                            <i class="fa-brands fa-telegram"></i>
+                            Telegram</a>
+                    </li>
+                    <li class="contacts-list-el _anim-items">
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://github.com/vitalikkostiuk7" class="contacts-ref github-ref">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li class="contacts-list-el _anim-items">
+                        <a target="_blank" rel="noopener nofollow noreferrer" href="https://www.linkedin.com/in/%D0%B2%D1%96%D1%82%D0%B0%D0%BB%D1%96%D0%BA-%D0%BA%D0%BE%D1%81%D1%82%D1%8E%D0%BA-9a2535256/" class="contacts-ref in-ref">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn</a>
+                    </li>
+                </ul>
+                <p class="copyright _anim-items">©All rights reserved</p>
+            </section>
+        </div>
+    </main>
+    <script src="./main.js"></script>
 </body>
 </html>
