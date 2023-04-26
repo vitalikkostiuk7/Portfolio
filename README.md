@@ -1,3 +1,3 @@
 My Portfolio using JS
 
-https://my-portfolio-kostiuk-vitaliy.netlify.app
+https://vitalikkostiuk7.github.io/Portfolio/
